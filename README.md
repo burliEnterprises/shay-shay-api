@@ -6,6 +6,9 @@ https://www.brainyquote.com/authors/shannon-sharpe-quotes
 
 run with flask run
 https://pythonhow.com/html-templates-in-flask/
+https://stackoverflow.com/questions/28207761/where-does-flask-look-for-image-files
+https://stackoverflow.com/questions/13772884/css-problems-with-flask-web-app
+
 
 used:
 https://github.com/BafS/mu

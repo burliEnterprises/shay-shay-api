@@ -7,14 +7,15 @@ import random
 from flask import render_template  # to display html pages
 
 app = Flask(__name__)   # init flask
-
-@app.route('/')
+print(__name__)
+@app.route('/shayshay')
 def index():
     return render_template('index.html')
 
 # route to grab random quote:
 # http://127.0.0.1:5000/random?limit=10
-@app.route('/random', methods=['GET'])
+# http://burli.pythonanywhere.com/shayshay/random?limit=3
+@app.route('/shayshay/random', methods=['GET'])
 def random_quote():
     # read file with quotes and convert to json:
     with open('quotes.json') as data_file:
@@ -56,8 +57,7 @@ def random_quote():
 def hello_world():
     return 'cups of the rose ...'
 
-# flask server:
+# flask server (DO NOT COPY THIS PART ON PYTHONANYWHERE!!!): --> config in wsgi (from app(.py) import app as application)
 if __name__ == '__main__':
-    #app.run(debug=False, port=80) #run app in debug mode on port 5000
     app.run(debug=False, port=5000) #run app in debug mode on port 5000 or terminal "flask run"
 
