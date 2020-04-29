@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>ShayShay API</title>
+        <meta name="author" content="Matteo Kofler / Burli">
+        <meta name="description" content="A free REST API for random Shannon Sharpe quotes">
+        <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/@bafs/mu@0.3/mu.min.css" />
+    </head>
+    <body>
+        <!-- header section -->
+        <header>
+            <img src="shay.png" class="shay-img"/>
+            <h1>ShayShay API</h1>
+            <p>A free REST API for random Shannon Sharpe quotes.</p>
+        </header>    
+        <hr>
+        
+        <!-- introduction section-->
+        <section>
+            <h2>Introduction</h2>
+            <p>Welcome to the Shay Shay API! You can use my API to get random Shannon Sharpe quotes and sayings. </p>
+                <p>There is no authentication or authorization for the API, it’s 100% open and free. Please don't abuse your use. </p>
+                <p> If you want to contribute or check out the source, visit the project on 
+                <a href="https://github.com/burliEnterprises/shay-shay-api">GitHub</a>.
+            </p>
+        </section>
+        <hr>
+        <!-- api usage section s-->
+        <section>
+            <h2>API Usage</h2>
+            <h3>Get a random quote</h3>
+            <p>This endpoint gets you a random Shannon Sharpe quote. 
+                The quote is just a generic quote; it’s not specified by category or anything.</p>
+            <h4>HTTP Request</h4>
+            <pre>GET http://burli.pythonanywhere.com/shayshay/random </pre>
+            <h4>Query Parameters</h4>
+            <table>
+                <thead>
+                    <th>Parameter</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </thead>
+                <tr>
+                    <td>limit</td>
+                    <td>integer</td>
+                    <td>The amount of quotes you want to grab from the API (max. 20)</td>
+                </tr>
+            </table>
+            <h4>Result</h4>
+            <pre>GET http://burli.pythonanywhere.com/shayshay/random?limit=3 </br><!-- dont format, otherwise spaces in pre -->
+{
+    "source": "ShayShay API",
+    "quotes": [
+        "I won't talk about ... ",
+        "I'm just ... Hall of Fame",
+        "Without TD, we ... That's fact"
+    ]
+}</pre>
+            </br>
+        </section>
+        <hr>
+        <!-- footer section-->
+        <footer>
+            <div>Made with ❤️ by <a href="burli.biz">Burli</a></div>
+            <!-- coffee -->
+            <div>
+                <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+                <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/9yAmlu7wI">
+                    <img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a coffee">
+                    <span style="margin-left:5px">Buy me a coffee</span>
+                </a>
+            </div>
+            <div class="small">Rip Mamba 🙏</div>
+        </footer>
+        
+    </body>
+</html>

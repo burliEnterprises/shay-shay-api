@@ -1,0 +1,45 @@
+.shay-img{
+    width: 150px;
+}
+
+footer {
+    /*text-align: center; */
+}
+
+footer > div {
+    padding-bottom: 12px;
+}
+.small{
+    font-size: 0.7em;
+}
+
+/* coffee: */
+
+.bmc-button img {
+    width: 27px !important;
+    padding-right: 2px !important;
+    box-shadow: none !important;
+    border: none !important;
+    vertical-align: middle !important;
+}
+
+.bmc-button {
+        font-size: 16px;
+    display: inline-flex;
+/*border-radius: 2px; */
+padding: 3px 18px;
+    text-align:center;
+color: #444 !important;
+/*border: 1px solid #444 !important;*/
+font-size: 20px;
+letter-spacing: 0.6px !important;
+font-family: 'Cookie', cursive !important;
+background: #ddd;
+}
+
+.bmc-button:hover,
+.bmc-button:active,
+.bmc-button:focus {
+    opacity: 0.7 !important;
+    color: #444 !important;
+}
