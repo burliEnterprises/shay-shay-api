@@ -1,4 +1,4 @@
-![](/static/shay.png)
+![](/static/shay_readme.png)
 
 ShayShay API
 ============
